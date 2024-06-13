@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Debit Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <a href="mainpage.html"><button style="float: left;border-radius: 10px;background-color: rgb(37, 245, 227);">Main page</button></a><br><br>
+    
+    <img src="sbilogo.png"height="100px";width="100%" style="background-color:transparent;"/>
+    <div class="child2">
+    <div class="container">
+        <div class="dedit-box" style="font-family: 'Times New Roman', Times, serif;">
+        <h1 >Debit Amount:</h1>
+        <input type="number" id="debitAmount" placeholder="Enter amount to debit">
+        <button onclick="debitAmount()">Submit</button><br><br>
+        <a href="accountdetails.html" > <button style="margin-right: 20px;">Check Balance</button></a>
+            <a href="Credit.html" > <button>Credit</button></a>
+    </div>
+    </div>
+    <script>let balance = 100000;
+
+        function debitAmount() {
+            const debitInput = document.getElementById('debitAmount');
+            const debitValue = parseFloat(debitInput.value);
+        
+            if (isNaN(debitValue) || debitValue <= 0) {
+                alert("Please enter a valid amount to debit.");
+                return;
+            }
+        
+            if (debitValue > balance) {
+                alert("Insufficient balance.");
+                return;
+            }
+        
+            balance -= debitValue;
+            alert("Transaction successful! Your new balance is: " + balance);
+        }
+        </script>
+        </div>
+</body>
+</html>

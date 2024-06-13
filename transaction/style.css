@@ -1,0 +1,216 @@
+.mainpage{
+          background-image: url(background.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          opacity: 80%;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+           display: flex;
+           text-align: center;
+          justify-content: center;
+          
+          min-height: 100vh;
+          max-height: 100vh;
+         
+}
+
+
+.log{
+    background-image: linear-gradient(to bottom, #5c45c7, #4f55ce, #4464d3, #3c70d6, #3a7cd7, #3d7dd8, #417eda, #447fdb, #4e75dd, #5c69dc, #6e5cd9, #804bd3);
+       color: white;
+       text-align: center;      
+       border-radius: 20px;
+       padding-top: 50px;
+       width: 30%;
+       height:300px;
+    margin-top: 50px;
+       box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+     
+}
+
+.log input{
+         
+            border-bottom: #c777b9;
+            text-align: center;
+            width: 200px;
+            height: 20px;
+}
+.log button{
+             width: 150px;
+             height: 30px;
+             border-radius: 26px;
+             background-color: #46eefa;
+}
+
+.log button:hover{
+             background-color:#4f55ce;
+             color: white;
+}
+
+/* ---------------------------next page csss-------------------------*/
+
+body{
+    background-image:url(background.jpg); 
+     background-size: cover;
+     background-repeat: no-repeat;
+   
+     text-align: center;
+     justify-content: center;
+     height: 100vh;
+     
+}
+
+.acount01{  display: inline-flex;
+             justify-content: center;       
+             color: white;
+             text-align: center;
+            width: 100%;
+           
+
+
+           
+           
+
+}
+
+.acount01 div{
+                 background-color:transparent;
+                 height: 300px;
+                 width: 400px;
+                 margin: 10px;
+                border-radius: 26px;
+                margin-top: 150px;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+                
+                                                           
+}
+
+.acount01 button{ width: 120px;
+               height: 30px;
+              
+               border-radius: 20px;
+               background-color: #8aa7ec;
+               font-family: Georgia, 'Times New Roman', Times, serif;
+               font-weight: bold;
+         
+}
+.acount01 h1{
+              color:#fff;
+              margin-top: 100px;
+              padding: 10px;
+             
+}
+/*--------------------accountdetails---------------------------------------*/
+
+.child{
+        border: 2px solid black;
+        height: 300px;
+        width: 400px;
+         border-radius: 26px;
+         margin-top: 100px;
+         margin-left: 40px;
+         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+         display: inline-flex; 
+         background-color: transparent;  
+         text-align: left; 
+         padding-left: 20px;  
+            
+
+}
+.child1{
+    display: inline-flex;
+    
+}
+.child1 button{
+    width: 100px;
+               height: 50px;
+               background-color: #8aa7ec;
+               font-family: Georgia, 'Times New Roman', Times, serif;
+               font-weight: bold;
+               margin-top: 30px;
+               border-radius: 20px;
+               font-size: large;
+         
+}
+/*------------------------Credit-----------------------------------*/
+
+
+
+.child2 {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image:url(background.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    text-align: center;
+    
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px; 
+    margin-bottom: 100px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.credit-box h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.credit-box input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.credit-box button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.credit-box button:hover {
+    background-color: #0056b3;
+}
+
+/*----------------------Debit----------------------*/
+
+.dedit-box h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.dedit-box input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.dedit-box button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dedit-box button:hover {
+    background-color: #0056b3;
+}

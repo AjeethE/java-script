@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Shopping Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color:#888888 ;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shopping Gallery</h1>
+        <div class="filter">
+            <input type="number" id="minPrice" placeholder="Min Price">
+            <input type="number" id="maxPrice" placeholder="Max Price">
+            <button id="filterBtn" style="margin-right: 70%;">Filter</button>
+            <a href="index.html" class="child2" style="text-decoration: none;margin-left: 20%;"><button style="display: flex;"> Home</button></a>
+                <a href="womenpage.html" class="child2" style="text-decoration: none;margin-left: 2%;"><button style="display: flex;"> Back </button></a>
+        </div>
+    </header>
+    <main>
+        <div class="gallery container-fluid" id="gallery">
+            <div class="item" data-price="579">
+             <center><img src="womenbottom1.jpg"  width="90%" height="350px" alt=""></center>
+                <p>Rare Rabbit</p>
+                    <p>₹579</p>
+            </div>
+            <div class="item" data-price="499">
+                <center><img src="womenbottom2.jpg"  width="90%" height="350px" alt=""></center>
+                <p>Here & Now</p>
+                    <p>₹499</p>
+            </div>
+            <div class="item" data-price="699">
+                <center> <img src="womenbottom3.jpg"  width="90%" height="350px" alt=""></center>
+                <p>Campus Sutra</p>
+                    <p>₹699</p>
+            </div>
+            <div class="item" data-price="679">
+                <center> <img src="womenbottom4.jpg" width="90%" height="350px" alt=""></center>
+                <p>Roadster</p>
+                    <p>₹679</p>
+            </div>
+            <div class="item" data-price="459">
+                <center><img src="womenbottom5.jpg" width="90%" height="350px" alt=""></center>
+                <p>Rare Rabbit</p>
+                    <p>₹459</p>
+            </div>
+            <div class="item" data-price="659">
+                <center><img src="womenbottom6.jpg" width="90%" height="350px" alt=""></center>
+                <p>Campus Sutra</p>
+                    <p>₹659</p>
+            </div>
+            <div class="item" data-price="1199">
+                <center> <img src="womenbottom7.jpg"width="90%" height="350px" alt=""></center>
+                <p>Here & Now</p>
+                    <p>₹1199</p>
+            </div>
+            <div class="item" data-price="1299">
+                <center><img src="womenbottom8.jpg" width="90%" height="350px" alt=""></center>
+                <p>Roadster</p>
+                    <p>₹1299</p>
+            </div>
+            <div class="item" data-price="1576">
+                <center><img src="womenbottom9.jpg"width="90%" height="350px" alt=""></center>
+                <p>Campus Sutra</p>
+                    <p>₹1576</p>
+            </div>
+            <div class="item" data-price="569">
+                <center><img src="womenbottom10.jpg" width="90%" height="350px" alt=""></center>
+                <p>Rare Rabbit</p>
+                    <p>₹569</p>
+            </div>
+            <div class="item" data-price="1019">
+                <center><img src="womenbottom11.jpg" width="90%" height="350px" alt=""></center>
+                <p>Roadster</p>
+                    <p>₹1019</p>
+            </div>
+            <div class="item" data-price="899">
+                <center><img src="womenbottom12.jpg" width="90%" height="350px" alt=""></center>
+                <p>Here & Now</p>
+                    <p>₹899</p>
+            </div>
+
+        </div>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const gallery = document.getElementById('gallery');
+    const filterBtn = document.getElementById('filterBtn');
+    const minPriceInput = document.getElementById('minPrice');
+    const maxPriceInput = document.getElementById('maxPrice');
+
+    filterBtn.addEventListener('click', function () {
+        const minPrice = parseFloat(minPriceInput.value) || 0;
+        const maxPrice = parseFloat(maxPriceInput.value) || Infinity;
+
+        const items = gallery.getElementsByClassName('item');
+        for (let item of items) {
+            const price = parseFloat(item.getAttribute('data-price'));
+            if (price >= minPrice && price <= maxPrice) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        }
+    });
+});
+    </script>
+</body>
+</html>

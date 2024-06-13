@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Credit Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+  
+ <a href="mainpage.html"><button style="float: left;border-radius: 10px;background-color: rgb(37, 245, 227);">Main page</button></a><br><br>
+ 
+ <img src="sbilogo.png"height="100px";width="100%" style="background-color:transparent;"/>
+ 
+ <div class="child2">
+    <div class="container">
+        <div class="credit-box" style="font-family: 'Times New Roman', Times, serif;">
+            <h1 >Credit Amount:</h1>
+            <input type="number" id="creditAmount" placeholder="Enter the amount to credit">
+            <button onclick="addCredit()">Submit</button><br><br>
+            <a href="accountdetails.html" > <button style="margin-right: 20px;">Check Balance</button></a>
+            <a href="Debit.html" > <button>Debit</button></a>
+        </div>
+    </div>
+    <script>
+      let balance = 100000;
+
+function addCredit() {
+    const creditAmount = parseFloat(document.getElementById('creditAmount').value);
+    if (isNaN(creditAmount) || creditAmount <= 0) {
+        alert('Please enter a valid amount.');
+        return;
+    }
+
+    balance += creditAmount;
+    alert('New Balance: ' + balance);
+}
+
+    </script>
+    </div>
+</body>
+</html>
